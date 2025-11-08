@@ -159,3 +159,15 @@ question("(d) Bestimmen Sie A $\\cup$ B",
 	)
 
 ```
+```{r exercise1_1, echo=FALSE}
+	question_numeric(
+	"...",
+	# Die korrekte Antwort
+	answer(11,
+		correct = TRUE),
+	answer(4,
+		message = "Leider falsch. Die gesuchte Zahl ist zu hoch."),
+	answer(2,
+	message = "Leider falsch. Die gesuchte Zahl ist zu niedrig.")
+	)
+```
