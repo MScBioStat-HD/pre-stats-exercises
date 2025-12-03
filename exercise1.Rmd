@@ -599,25 +599,30 @@ library(shiny)
 ```{r, final, echo=FALSE}
 quiz(caption = "",
 	question("(a) Skizzieren Sie die Funktion auf dem Intervall [-1,3]",
-	answer("23"),
-	answer("3", correct = TRUE)
+	answer("$f'(x)$ = $x^{2}$ - 2x + 1"),
+	answer("$f'(x)$ = $2x^{2}$ + 4x - 1"),
+	answer("$f'(x)$ = $3x^{2}$ - 4x + 1", correct = TRUE)
 	),
-	question("(b) Bestimmen Sie die Nullstellen der Funktion $f$ (x)",
-	answer("23"),
-	answer("3", correct = TRUE)
+	question("(b) Bestimmen Sie die Nullstellen der Funktion $f$(x)",
+	answer("$x_{1}$ = 0, $x_{2}$ = 2"),
+	answer("$x_{1}$ = 1, $x_{2}$ = 0", correct = TRUE),
+	answer("$x_{1}$ = $-1$, $x_{2}$ = 2")
 	),
 	question("(c) Bestimmen Sie die Tangente im Punkt $x_{0}$ = 2 und zeichnen
 	Sie die Tangente ein",
-	answer("23"),
-	answer("3", correct = TRUE)
+	answer("$t(x)$ = 5x - 8", correct = TRUE),
+	answer("$t(x)$ = 5x - 2"),
+	answer("$t(x)$ = 3x - 4")
 	),
 	question("(d) Bestimmen Sie die Extremstellen im Intervall [-1,3]",
-	answer("23"),
-	answer("3", correct = TRUE)
+	answer("Keine Extremstellen im Intervall; die Funktion ist monoton."),
+	answer("$x_{1}$ = 1, $x_{2}$ = 1/3, $f$(-1) = $-1$, $f$($\\frac{1}{3}$) = 3, $f(1)$ = 0, $f(3)$ = 12"),
+	answer("$x_{1}$ = 1, $x_{2}$ = 1/3, $f$(-1) = $-4$, $f$($\\frac{1}{3}$) = 4/27, $f(1)$ = 0, $f(3)$ = 12", correct = TRUE)
 	),
 	question("(e) Berechnen Sie die Fläche unter der Kurve im Intervall [-1,1]",
-	answer("23"),
-	answer("3", correct = TRUE)
+	answer("$-1.5$"),
+	answer("1.5", correct = TRUE),
+	answer("2")
 	)
 )
 ```
@@ -626,8 +631,23 @@ quiz(caption = "",
 	\(f(x) = (x^{2} - 2x + 1) \cdot x = x^{3} - 2x^{2} + x\) <br>
 	\(f'(x) = 3x^{2} - 4x + 1\)
 
-- Nullstellen \(f(x) = 0 \Rightarrow x_{1} = 1, x_{2} = 0\) <br> (ein Produkt ist 0, wenn einer der Faktoren 0 ist)
-- Tangente im Punkt \(x_{0} = 2\): <br>
+(b) Nullstellen \(f(x) = 0 \Rightarrow x_{1} = 1, x_{2} = 0\) <br> (ein Produkt ist 0, wenn einer der Faktoren 0 ist)
+(c) Tangente im Punkt \(x_{0} = 2\): <br>
 	\(t(x) = f(2) + f'(x)(x - 2) = 2 +5(x -2)\) <br>
 	\(\Leftrightarrow t(x) = 5x - 8\)
+
+(d) Mögliche Extremstellen: \(f'(x) = 0 \)
+	\(x_{1,2} = \frac{4 \sqrt{16 - 4 \cdot 3}}{6} = \frac{4 \sqrt{4 \cdot 3}}{6}\)
+	\(\Rightarrow x_{1} = 1, x_{2} = 1/3\)
+	Eingesetzt in die Funktion f(x) ergibt sich für die Extremstellen und
+	am Rand: f(\(-1\))\( = -4 , f(\frac{1}{3}) = 4/27, f(3) =12\)
+
+	Daraus lässt sich ablesen, dass die absoluten Extremwerte am Rand liegen. Da
+	ein Polynom vom Grad 3 entweder zwei Extremwerte oder eine Wendestelle
+	besitzt, sind die inneren Punkte auch lokale Extremwerte.
+
+(e) Fläche unter der Kurve im Intervall [-1,1] Fläche:
+	\(\big|_{}^{}\int_{-1}^{-0}(x^{3} - 2x^{2} + x)dx \big|_{}^{} + \big|_{}^{} \int_{0}^{1}(x^{3} - 2x^{2} + x)dx \big|_{0}^{1} \big|_{}^{}\)
+	\(\big|_{}^{}0 - (\frac{1}{4} + \frac{2}{3} + \frac{1}{2})\big|_{}^{} + \big|_{}^{} (\frac{1}{4} + \frac{2}{3} + \frac{1}{2}) - 0\big|_{}^{} = 1.5\)
+
 </details> 
