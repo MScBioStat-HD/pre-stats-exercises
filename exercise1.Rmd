@@ -12,8 +12,9 @@ library(learnr)
 library(VennDiagram)
 library(grid)
 ```
+## Block 1
 
-## Aufgabe 1
+### Übungen 1 – A1
 ```{r, echo=FALSE, results='asis'}
 	library(shiny)
 	wellPanel(
@@ -50,8 +51,7 @@ question("(c) A $\\cap$ B = B heißt dasselbe wie B $\\subset$ A",
 )
 ```
 
-## Aufgabe 2 
-
+### Übungen 1 – A2
 ```{r, echo=FALSE, results='asis'}
 	library(shiny)
 	wellPanel(
@@ -69,7 +69,7 @@ question("(a) Geben Sie eine geeignete Menge $\\Omega$ an, in der alle mögliche
 )
 ```
 
-<details> <summary><strong>Lösung für Menge $\Omega$ anzeigen</strong><br><br></summary>
+<details> <summary><strong>Ü1 – Lösung Aufgabe 2</strong><br><br></summary>
 Da die Münzen hintereinander geworfen werden, spielt die Reihenfolge in der
 die Ergebnisse Wappen oder Zahl auftreten eine Rolle.
 
@@ -130,8 +130,7 @@ Die Schnittmenge zwischen beiden Ereignissen enthält nur ein Ergebnis
 A $\cap$ B = {(W, W, Z, Z)}.
 </details> 
 
-## Augabe 3
-
+### Übungen 1 – A3
 ```{r, echo=FALSE, results='asis'}
 	library(shiny)
 	wellPanel(
@@ -172,8 +171,7 @@ A $\cap$ B = {(W, W, Z, Z)}.
 	)
 ```
 
-## Aufgabe 4
-
+### Übungen 1 – A4
 ```{r, echo=FALSE, results='asis'}
 	library(shiny)
 	wellPanel(
@@ -208,8 +206,7 @@ A $\cap$ B = {(W, W, Z, Z)}.
 	)
 ```
 
-## Aufgabe 5
-
+### Übungen 1 – A5
 ```{r, echo=FALSE, results='asis'}
 	library(shiny)
 	wellPanel(
@@ -258,7 +255,6 @@ x = ln(27) ≈ 3.3
 $log_{10}(2) + log_{10}(5) = log_{10}(2 · 5) = log_{10}10 = 1$
 </details> 
 
-
 ```{r, exercise1_5_5, echo=FALSE}
 	question("(e) $log_{2}$(4) =",
 	answer("23"),
@@ -270,11 +266,9 @@ $log_{10}(2) + log_{10}(5) = log_{10}(2 · 5) = log_{10}10 = 1$
 $log_{2}(4) = log_{2}(2) + log_{2}(2) = 2$ oder $log_{2}$($2^{2}$) = 2 · $log_{2}(2) = 2$
 </details> 
 
-
 ## Block 2 
 
 ### Übungen 2 – A1
-
 ```{r, echo=FALSE, results='asis'}
 library(shiny)
 wellPanel(
@@ -308,7 +302,6 @@ quiz(caption = "",
 </details> 
 
 ### Übungen 2 – A2
-
 ```{r, echo=FALSE, results='asis'}
 library(shiny)
 wellPanel(
@@ -334,8 +327,6 @@ quiz(caption = "",
 )
 ```
 
-
-
 <details> <summary><strong>Ü2 – Lösung Aufgabe 2</strong><br><br></summary>
 (a) Für die Verdoppelungszeit \(\delta muss gelten u(\delta) = 2 \cdot u(0)\). Eingesetzt in die
 Funktionsgleichung ergibt sich
@@ -353,7 +344,6 @@ schnell.
 </details> 
 
 ### Übungen 2 – A3
-
 ```{r, echo=FALSE, results='asis'}
 library(shiny)
 wellPanel(
@@ -399,7 +389,6 @@ quiz(caption = "",
 ## Block 3
 
 ### Übungen 3 – A1
-
 ```{r, echo=FALSE, results='asis'}
 library(shiny)
 	wellPanel(
@@ -476,7 +465,6 @@ quiz(caption = "",
 </details> 
 
 ### Übungen 3 – A2
-
 ```{r, exercise3_2_1, echo=FALSE}
 	question( "Gegeben ist die Funktion ${f}$(x) = 8 $x^{3}$ + 3 $x^{2}$ – 3x. 
 	Bestimmen Sie die globalen und lokalen Extremstellen der Funktion im Intervall [-1,1].
@@ -565,8 +553,8 @@ quiz(caption = "",
 	answer("8", correct = TRUE)
 	),
 	question("(b) $f(x)$ = \\begin{cases} 0 & \\text{für} & x<0 \\\\\\ 
-				-x^{2} + \\frac{4}{3} & \\text{für} & 0 \\le x\\le 1 & \\text{im Intervall} & [0,2] \\\\\\ 
-				0 & \\text{für} & x>1 \\end{cases}",
+		-x^{2} + \\frac{4}{3} & \\text{für} & 0 \\le x\\le 1 & \\text{im Intervall} & [0,2] \\\\\\ 
+		0 & \\text{für} & x>1 \\end{cases}",
 	answer("$\\frac{1}{3}$"),
 	answer("1", correct = TRUE),
 	answer("$\\frac{4}{3}$")
@@ -589,7 +577,6 @@ quiz(caption = "",
 </details> 
 
 ## Abschlussübung
-
 ```{r, echo=FALSE, results='asis'}
 library(shiny)
 	wellPanel(
@@ -649,5 +636,258 @@ quiz(caption = "",
 (e) Fläche unter der Kurve im Intervall [-1,1] Fläche:
 	\(\big|_{}^{}\int_{-1}^{-0}(x^{3} - 2x^{2} + x)dx \big|_{}^{} + \big|_{}^{} \int_{0}^{1}(x^{3} - 2x^{2} + x)dx \big|_{0}^{1} \big|_{}^{}\)
 	\(\big|_{}^{}0 - (\frac{1}{4} + \frac{2}{3} + \frac{1}{2})\big|_{}^{} + \big|_{}^{} (\frac{1}{4} + \frac{2}{3} + \frac{1}{2}) - 0\big|_{}^{} = 1.5\)
+
+</details> 
+
+## Block 5
+
+### Übungen 5 – A1
+```{r, exercise4_1_3as, echo=FALSE}
+quiz(caption = "",
+	question("(a) Sind die drei Vektoren $x = \\begin{pmatrix} 1 \\\\\\ 0 \\\\\\ 0 \\end{pmatrix}$, $y = \\begin{pmatrix} 1 \\\\\\ 2 \\\\\\ 3 \\end{pmatrix}$ und $z = \\begin{pmatrix} 2 \\\\\\ 2 \\\\\\ 3 \\end{pmatrix}$ linear unabhängig?",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+	),
+	question("(b) Sind die drei Vektoren $x = \\begin{pmatrix} 1 \\\\\\ 1 \\\\\\ 1 \\end{pmatrix}$, $y = \\begin{pmatrix} 2 \\\\\\ 0 \\\\\\ 1 \\end{pmatrix}$ und $z = \\begin{pmatrix} 3 \\\\\\ 3 \\\\\\ 2 \\end{pmatrix}$ linear unabhängig?",
+	answer("$\\frac{1}{3}$"),
+	answer("1", correct = TRUE),
+	answer("$\\frac{4}{3}$")
+	)
+)
+```
+
+<details> <summary><strong>Ü5 – Lösung Aufgabe 1</strong><br><br></summary>
+
+</details> 
+
+### Übungen 5 – A2
+```{r, exercise4222_3, echo=FALSE}
+	question("(a) Gegeben sind die Vektoren x = (1, 2, 3) und y = (0, -3, 2).
+	Berechnen Sie das Skalarprodukt von x und y und interpretieren Sie das
+	Ergebnis geometrisch.",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+)
+```
+
+<details> <summary><strong>Ü5 – Lösung Aufgabe 2</strong><br><br></summary>
+
+</details> 
+
+## Block 6
+
+### Übungen 6 – A1
+```{r, exercise42223, echo=FALSE}
+	question("(a) Gegeben seien die beiden Matrizen <br> <br>
+	$A =\\begin{pmatrix} 1 & 2 & -3 \\\\\\ 0 & 1 & -1 \\\\\\ 2 & -2 & 0 \\\\\\ \\end{pmatrix}$ und $B =\\begin{pmatrix} 0 & -1 & 1 \\\\\\ 1 & 2 & -3 \\\\\\ 0 & 2 & -2 \\\\\\ \\end{pmatrix}$.
+	<br><br> Berechnen Sie A · B, $A^{T}$, $B^{T}$, sowie $B^{T}$ $\\cdot$ $A^{T}$.",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+	)
+
+```
+
+<details> <summary><strong>Ü6 – Lösung Aufgabe 1</strong><br><br></summary>
+
+</details> 
+
+### Übungen 6 – A2
+```{r, exercis222_3, echo=FALSE}
+quiz(caption = "",
+	question("(a) Berechnen Sie <br> <br> $A =\\begin{pmatrix} -4 & -3 & 2 & 0 \\\\\\ 1 & 2 & -2 & 2 \\\\\\ 0 & 3 & 1 & -1 \\\\\\ 4 & 5 & 0 & 7 \\end{pmatrix}$ $\\begin{pmatrix} 1 \\\\\\ 1 \\\\\\ 0 \\\\\ 1 \\end{pmatrix}$",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+	),
+	question("(b) Berechnen Sie <br> <br> $A =\\begin{pmatrix} 4 & -3 & 2 \\\\\\ 0 & 1 & -1 \\\\\\ -2 & 3 & 0 \\end{pmatrix}$ $\\begin{pmatrix} x \\\\\\ y \\\\\\ z \\end{pmatrix}$",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+	),
+	question("(c) Berechnen Sie <br> <br> $A =\\begin{pmatrix} 3 & -2 & 1 \\\\\\ 0 & 1 & 1 \\\\\\ 4 & -1 & 2 \\end{pmatrix}$ $\\begin{pmatrix} 1 \\\\\\ 2 \\\\\\ -3 \\end{pmatrix}$",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+	)
+)
+```
+
+<details> <summary><strong>Ü6 – Lösung Aufgabe 2</strong><br><br></summary>
+
+</details> 
+
+### Übungen 6 – A3
+```{r, exercise221_3, echo=FALSE}
+quiz(caption = "",
+	question("(a) Es sei die Matrix $A =\\begin{pmatrix} 0 & 1 & 0 \\\\\\ 1 & 0 & 0 \\\\\\ 0 & 0 & 1 \\\\\\ \\end{pmatrix}$ <br><br>
+	gegeben. Berechnen Sie A $\\cdot$ A. Falls A invertierbar ist, wie sieht $A^{-1}$
+	aus?",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+	),
+	question("(b) Es sei die Matrix $B =\\begin{pmatrix} 1 & 1 & 1 \\\\\\ -1 & 1 & 0 \\\\\\ 1 & 1 & 0 \\\\\\ \\end{pmatrix}$ <br><br>
+	gegeben. Berechnen Sie B $\\cdot$ $B^{T}$.",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+	)
+)
+```
+
+<details> <summary><strong>Ü6 – Lösung Aufgabe 3</strong><br><br></summary>
+
+</details> 
+
+## Block 7
+
+### Übungen 7 – A1
+```{r, exercise423, echo=FALSE}
+	question("Besitzt das lineare Gleichungssystem
+	\\begin{array}{r r r l}
+	 x_{1} & + & x_{2} & + &  x_{3} & = & 1 \\\\\\ <br>
+	 x_{1} & + & &         &  x_{3} & = & 1 \\\\\\ <br>
+	2x_{1} & + & x_{2} & + & 2x_{3} & = & 0
+	\\end{array}
+	 eine Lösung?",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+)
+```
+
+<details> <summary><strong>Ü7 – Lösung Aufgabe 1</strong><br><br></summary>
+
+</details> 
+
+### Übungen 7 – A2
+```{r, sdf, echo=FALSE}
+	question("Lösen Sie das lineare Gleichungssystem 
+	\\begin{array}{r r r l}
+	x_{1} & + & 2x_{2} & - & 3x_{3} & + & x_{2} & = & 0 \\\\\\ <br>
+	x_{1} & + &  x_{2} & + &  x_{3} & + & x_{4} & = & 0
+	\\end{array}",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+)
+```
+
+<details> <summary><strong>Ü7 – Lösung Aufgabe 2</strong><br><br></summary>
+
+</details> 
+
+### Übungen 7 – A3
+```{r, exercise411, echo=FALSE}
+	question("Ist das lineare Gleichungssystem 
+	\\begin{array}{r r r l}
+	-3x_{1} & + & x_{2} & + & 4x_{3} & = & 1 \\\\\\ <br>
+	  x_{1} & + & x_{2} & + & x_{3} & = & 0 \\\\\\ <br>
+	-2x_{1} & + & &         & x_{3} & = &-1 \\\\\\ <br>
+	x_{1} & + & x_{2} & - & 2x_{3} & = & 0
+	\\end{array} 
+	lösbar?",
+	answer("4"),
+	answer("0"),
+	answer("8", correct = TRUE)
+	)
+```
+
+<details> <summary><strong>Ü7 – Lösung Aufgabe 3</strong><br><br></summary>
+
+</details> 
+
+### Übungen 7 – A4
+```{r, exercise5555, echo=FALSE}
+	question("Für welche Werte von a hat das folgende Gleichungssystem eine
+	Lösung? Geben Sie die Lösung an. 
+	\\begin{array}{r r r l}
+	x & + & y & + & z & = & a \\\\\\ <br>
+	x & + & y & &     & = & 0 \\\\\\ <br>
+	&     & y & + & z & = & 2
+	\\end{array}  ",
+	answer("Das Gleichungssystem besitzt für alle $a \\in \\mathbb{R}$ unendlich viele Lösungen."),
+	answer("Das Gleichungssystem besitzt nur für $a = 2$ eine Lösung."),
+	answer("Für alle $a \\in \\mathbb{R}$ existiert genau eine Lösung mit 
+	$x = a - 2$, $y = 4 - a$, $z = a - 2$.", correct = TRUE)
+	)
+
+```
+
+<details> <summary><strong>Ü7 – Lösung Aufgabe 4</strong><br><br></summary>
+
+</details> 
+
+### Übungen 7 – A5
+```{r, exercise555, echo=FALSE}
+	question("Lösen Sie das folgende Gleichungssystem, wobei a ≠ 1 eine reelle Zahl ist.
+	\\begin{array}{r r r l}
+	3x_{1} & - & 2x_{2} & - & ax_{3} & = 1\\\\\\ <br>
+	3x_{1} & - & x_{2} & + &  x_{3} & = 5
+	\\end{array}",
+	answer(
+	"Für $a \\neq 1$ besitzt das Gleichungssystem unendlich viele Lösungen mit
+	$x_{1} = \\frac{5a - 1}{3a - 3} +  \\frac{1}{3} \\alpha$, 
+	$x_{2} = \\alpha$, 
+	$x_{3} = \\frac{4}{1-a}\\alpha$.",
+	correct = TRUE
+	),
+  	answer(
+	"Für $a \\neq 1$ besitzt das Gleichungssystem genau eine Lösung:
+	$x_{1} = \\frac{5}{a-1}$, $x_2 = 0$, $x_3 = 0$."
+	),
+	answer(
+	"Für $a \\neq 1$ besitzt das Gleichungssystem unendlich viele Lösungen mit
+	$x_{1} = \\frac{5}{a-1}$, 
+	$x_{2} = \\alpha$, 
+	$x_{3} = \\frac{3}{a-1} \\alpha$."
+	)
+)
+
+```
+
+<details> <summary><strong>Ü7 – Lösung Aufgabe 5</strong><br><br></summary>
+
+</details> 
+
+## Block 8
+
+### Übungen 8 – A1
+```{r, exercise5a5, echo=FALSE}
+quiz(caption = "",
+	question("(a) Berechnen Sie die Determinaten der folgenden Matrizen: $\\begin{pmatrix} 2 & -3 \\\\\\ 5 & 1 \\end{pmatrix}$",
+	answer("12"),
+	answer("9"),
+	answer("17", correct = TRUE)
+	),
+	question("(b) Berechnen Sie die Determinaten der folgenden Matrizen: $\\begin{pmatrix} 2 & 0 & 0 \\\\\\ 0 & 1 & 0 \\\\\\ 0 & 0 & 7\\end{pmatrix}$",
+	answer("14", correct = TRUE),
+	answer("7"),
+	answer("10")
+	)
+)
+```
+
+<details> <summary><strong>Ü8 – Lösung Aufgabe 1</strong><br><br></summary>
+
+</details> 
+
+### Übungen 8 – A2
+```{r, exercise5, echo=FALSE}
+	question("Berechnen Sie die Inverse der Matrix $A =\\begin{pmatrix} 1 & -1 & 1 \\\\\\ 2 & 1 & -1 \\\\\\ -1 & 2 & 2 \\end{pmatrix}$
+	<br><br> durch elementare Umformungen und bestimmen Sie die
+	Determinante der Matrix, sowie ihrer Inversen.",
+	answer("<br> det $A = 12$, $A^{-1} = \\frac{1}{12} \\begin{pmatrix} 4 & -4 & 0 \\\\\\ -3 & 3 & -3 \\\\\\ 5 & -1 & -3 \\end{pmatrix}$"),
+	answer("<br> det $A^{-1}$ = $\\frac{1}{12}$, 
+	$A^{-1} =\\frac{1}{12} \\begin{pmatrix} 4 & 4 & 0 \\\\\\ -3 & 3 & 3 \\\\\\ 5 & -1 & 3 \\end{pmatrix}$", correct = TRUE),
+	answer(  "<br >det $A^{-1} = 12$, 
+	$A^{-1} = \\begin{pmatrix} \\frac{1}{3} & \\frac{1}{3} & 0 \\\\\\ -\\frac{1}{4} & \\frac{1}{4} & \\frac{1}{4} \\\\\\ \\frac{5}{12} & -\\frac{1}{12} & \\frac{1}{4} \\end{pmatrix}$")
+	)
+```
+
+<details> <summary><strong>Ü8 – Lösung Aufgabe 2</strong><br><br></summary>
 
 </details> 
